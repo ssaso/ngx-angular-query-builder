@@ -1,13 +1,20 @@
 {
   "name": "ngx-angular-query-builder",
   "version": "18.0.1-angular19",
-  "description": "Port of angular2-query-builder from github.com/designermanjeets/Angular-QueryBuilder in order to support angular 12+",
-  "license": "MIT",
+  "description": "Fork of ngx-angular-query-builder with Angular 19+ support",
   "peerDependencies": {
     "@angular/common": ">=18 <22",
     "@angular/core": ">=18 <22"
   },
   "dependencies": {
-    "tslib": "^2.3.0"
-  }
+    "tslib": "^2.6.2"
+  },
+  "main": "dist/ngx-angular-query-builder/bundles/ngx-angular-query-builder.umd.js",
+  "module": "dist/ngx-angular-query-builder/fesm2015/ngx-angular-query-builder.mjs",
+  "es2015": "dist/ngx-angular-query-builder/fesm2015/ngx-angular-query-builder.mjs",
+  "typings": "dist/ngx-angular-query-builder/ngx-angular-query-builder.d.ts",
+  "scripts": {
+    "prepare": "ng build ngx-angular-query-builder"
+  },
+  "license": "MIT"
 }
